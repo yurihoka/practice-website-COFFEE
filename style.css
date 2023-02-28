@@ -1,0 +1,42 @@
+body {
+  background-image: url(img/mainvisual.jpg);
+  background-size: cover;
+  width: 100%;
+  background-repeat: no-repeat;
+  height: 770px;
+}
+
+header {
+    margin-top: 30px;
+    margin-right: 30px;
+}
+
+.navbar ul {
+  text-align: right;
+}
+
+.navbar li {
+  display: inline-block;
+  list-style-type: none;
+}
+
+.navbar a {
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: bold;
+  margin: 13px;
+  color: white;
+  text-shadow: 1px 1px 2px black;
+  transition: 0.5s;
+}
+
+.navbar a:hover {
+  color: red;
+}
+
+.mainvisual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 300px;
+}
