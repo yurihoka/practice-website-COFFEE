@@ -1,20 +1,25 @@
-header {
-    background-image: url(img/mainvisual.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    padding-top: 5px;
-    width: 100%;
-  }
+@charset "UTF-8";
 
-body {
-    margin: 0;
-    padding: 0;
+html {
+  font-size: 100%;
 }
 
-.headernav {
-  text-align: right;
-  padding-right: 15px;
+img {
+  max-width: 100%;
+}
+
+header {
+  background-image: url(img/mainvisual.jpg);
+  background-size: cover;
+  height: 100vh;
+  padding-top: 5px;
+  background-position: center;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
 
 .headernav li {
@@ -24,7 +29,6 @@ body {
 
 .headernav a {
   text-decoration: none;
-  font-size: 13px;
   font-weight: bold;
   margin-right: 20px;
   color: white;
@@ -37,8 +41,72 @@ body {
 }
 
 .mainvisual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 250px;
+}
+
+.section h2 {
+  font-size: 2rem;
+  background-image: url(img/menu.jpg);
+  background-position: center;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+}
+
+.section-menu {
+  padding: 0 16px 100px 16px;
+  max-width: 320px;
+  font-size: 0.75rem;
+  text-align: center;
+}
+
+.section-menu h3 {
+  font-size: 1.25rem;
+}
+
+.section-left {
+  flex-direction: column;
+}
+
+.under {
+  border-bottom: solid 5px red;
+}
+
+.section-menu dl {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section-menu dt {
+  border-bottom: dotted 1px;
+  text-align: left;
+  padding-right: 40%;
+  margin: 20px 0;
+}
+
+.section-menu dd {
+  text-align: right;
+  margin: 20px 0;
+}
+
+@media screen and (min-width: 767px) {
+  header {
+    text-align: right;
+  }
+
+  .section {
+    font-size: 2rem;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+  .section-menu {
+    font-size: 2rem;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 300px;
+  }
 }
