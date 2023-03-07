@@ -74,6 +74,7 @@ body {
 
 .under {
   border-bottom: solid 5px red;
+  text-align: center;
 }
 
 .section-menu dl {
@@ -93,6 +94,83 @@ body {
   margin: 20px 0;
 }
 
+.sec-title h2 {
+  font-size: 2rem;
+  background-image: url(img/about.jpg);
+  background-position: center;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+}
+
+.section-about h3 {
+  text-align: center;
+}
+
+.section-about ul {
+  font-size: 0.8rem;
+}
+
+.section-about li {
+  list-style-type: none;
+  padding-bottom: 15px;
+  text-align: left;
+  padding-left: 0px;
+  flex-wrap: wrap;
+  width: fit-content;
+  margin: auto;
+}
+
+.btn {
+  text-decoration: none;
+  text-align: center;
+  color: black;
+  padding: 20px 35px;
+  margin: 20px auto;
+  width: 100%;
+  position: relative;
+  font-size: 0.8rem;
+}
+
+.btn::before {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 2;
+  content: "";
+  transition: all 0.3s;
+}
+
+.btn::after {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  z-index: 2;
+  content: "";
+  transition: all 0.3s;
+}
+
+.btn::before {
+  border-top: 2px solid red;
+  border-left: 2px solid red;
+  width: 20px;
+  height: 20px;
+}
+
+.btn::after {
+  border-right: 2px solid red;
+  border-bottom: 2px solid red;
+  width: 20px;
+  height: 20px;
+}
+
+.btn:hover::after,
+.btn:hover::before {
+  width: 99%;
+  height: 95%;
+}
+
 @media screen and (min-width: 767px) {
   header {
     text-align: right;
@@ -108,5 +186,9 @@ body {
   .section-menu {
     font-size: 2rem;
     display: flex;
+  }
+
+  .section-menu h2 {
+    top: 30%;
   }
 }
