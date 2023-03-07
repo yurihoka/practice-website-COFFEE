@@ -16,19 +16,26 @@ a {
   text-decoration: none;
 }
 
+.section {
+  text-align: center;
+}
+
 header {
   background-image: url(img/mainvisual.jpg);
   background-size: cover;
   height: 100vh;
   padding-top: 5px;
   background-position: center;
-  text-align: right;
   font-size: 0.8rem;
 }
 
 body {
   margin: 0;
   padding: 0;
+}
+
+.headernav ul {
+  text-align: right;
 }
 
 .headernav li {
@@ -50,57 +57,55 @@ body {
 }
 
 .mainvisual {
-  display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 250px;
+  text-align: center;
 }
 
 .section h2 {
   font-size: 2rem;
-  background-image: url(img/menu.jpg);
-  background-position: center;
-  background-size: cover;
   color: white;
-  text-align: center;
   padding: 15px 0;
 }
 
-.section-menu {
+.wrapper {
   padding: 0 16px 100px 16px;
-  max-width: 320px;
-  font-size: 0.75rem;
+}
+
+.sec-menu h2 {
+  background-image: url(img/menu.jpg);
+  padding: 30px 0;
+  background-position: center;
+  background-size: cover;
   text-align: center;
-}
-
-.section-menu h3 {
-  font-size: 1.25rem;
-}
-
-.section-left {
-  flex-direction: column;
 }
 
 .under {
   border-bottom: solid 5px red;
-  text-align: center;
+  font-size: 1rem;
 }
 
-.section-menu dl {
+.menu-item h3 {
+  line-height: 1.5em;
+}
+
+.menu-item dl {
   display: flex;
   flex-wrap: wrap;
+  font-size: 0.8rem;
 }
 
-.section-menu dt {
+.menu-item dt {
   border-bottom: dotted 1px;
-  text-align: left;
-  padding-right: 40%;
   margin: 20px 0;
+  text-align: left;
+  width: 90%;
 }
 
-.section-menu dd {
-  text-align: right;
+.menu-item dd {
   margin: 20px 0;
+  width: 10%;
 }
 
 .sec-title h2 {
@@ -184,15 +189,31 @@ body {
   header {
     font-size: 0.8rem;
   }
-  .section {
-    font-size: 2rem;
+  .section h2 {
+    font-size: 4rem;
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
+    padding: 70px 0;
   }
 
-  .section-menu {
-    font-size: 2rem;
+  .wrapper {
     display: flex;
+  }
+
+  .menu-item {
+    width: 50%;
+    margin: 0 10px;
+  }
+
+  .menu-item:first-child {
+    border-right: solid 1px #000;
+  }
+
+  .under {
+    font-size: 2.5rem;
+  }
+  .menu-item dt {
+    width: 80%;
   }
 }
