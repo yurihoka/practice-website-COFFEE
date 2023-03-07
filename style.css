@@ -8,27 +8,36 @@ img {
   max-width: 100%;
 }
 
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
 header {
   background-image: url(img/mainvisual.jpg);
   background-size: cover;
   height: 100vh;
   padding-top: 5px;
   background-position: center;
+  text-align: right;
+  font-size: 0.8rem;
 }
 
 body {
   margin: 0;
   padding: 0;
-  width: 100%;
 }
 
 .headernav li {
   display: inline-block;
   list-style-type: none;
+  margin-right: 10px;
 }
 
 .headernav a {
-  text-decoration: none;
   font-weight: bold;
   margin-right: 20px;
   color: white;
@@ -173,9 +182,8 @@ body {
 
 @media screen and (min-width: 767px) {
   header {
-    text-align: right;
+    font-size: 0.8rem;
   }
-
   .section {
     font-size: 2rem;
     background-position: center;
@@ -186,9 +194,5 @@ body {
   .section-menu {
     font-size: 2rem;
     display: flex;
-  }
-
-  .section-menu h2 {
-    top: 30%;
   }
 }
