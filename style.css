@@ -201,6 +201,11 @@ iframe {
   aspect-ratio: 20/9;
 }
 
+footer {
+  text-align: center;
+  font-size: 10px;
+}
+
 @media screen and (min-width: 767px) {
   header {
     font-size: 0.8rem;
